@@ -1,19 +1,17 @@
 import java.util.Scanner;
 
-public class AreaCalculator{
+public class AreaCalculator {
 
-    static class AreaCalculator {
-        public double calculateArea(float radius) {
-            return Math.PI * radius * radius;
-        }
+    float calculateArea(float radius) {
+        return (float) (Math.PI * radius * radius);
+    }
 
-        public double calculateArea(float length, float breadth) {
-            return length * breadth;
-        }
+    float calculateArea(float length, float breadth) {
+        return length * breadth;
+    }
 
-        public double calculateArea(double base, double height) {
-            return 0.5 * base * height;
-        }
+    double calculateArea(double base, double height) {
+        return 0.5 * base * height;
     }
 
     public static void main(String[] args) {
@@ -30,7 +28,5 @@ public class AreaCalculator{
         System.out.printf("%.2f\n", ac.calculateArea(radius));
         System.out.printf("%.2f\n", ac.calculateArea(length, breadth));
         System.out.printf("%.2f\n", ac.calculateArea(base, height));
-
-        sc.close();
     }
 }
